@@ -1,4 +1,9 @@
 {
+    "name": "space/notify",
+    "description": "Helper Notify With Bootstrap Or Sweetalert2",
+    "require": {
+        "php": "^7.2"
+    },
     "autoload": {
         "psr-4": {
             "Space\\": "src/"
