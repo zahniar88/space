@@ -1,6 +1,8 @@
 {
     "name": "space/notify",
     "description": "Helper Notify With Bootstrap Or Sweetalert2",
+    "type": "library",
+    "license": "MIT",
     "require": {
         "php": "^7.2"
     },
