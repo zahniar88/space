@@ -13,7 +13,7 @@ trait Message
      */
     public static function success($message)
     {
-        echo "
+        return "
             <script>
                 Swal.fire('Sukses', '" . $message . "', 'success');
             </script>
@@ -25,7 +25,7 @@ trait Message
      */
     public static function warning($message)
     {
-        echo "
+        return "
             <script>
                 Swal.fire('Peringatan', '" . $message . "', 'warning');
             </script>
@@ -37,7 +37,7 @@ trait Message
      */
     public static function error($message)
     {
-        echo "
+        return "
             <script>
                 Swal.fire('Gagal', '" . $message . "', 'error');
             </script>
@@ -49,7 +49,7 @@ trait Message
      */
     public static function info($message)
     {
-        echo "
+        return "
             <script>
                 Swal.fire('Pemberitahuan', '" . $message . "', 'info');
             </script>

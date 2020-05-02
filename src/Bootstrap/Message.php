@@ -20,7 +20,7 @@ trait Message
             $iconSet = '<i class="fas fa-check-circle mr-2"></i>';
         }
 
-        echo '
+        return '
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 ' . $iconSet . $message . '
             </div>
@@ -40,7 +40,7 @@ trait Message
             $iconSet = '<i class="fas fa-exclamation-triangle mr-2"></i>';
         }
 
-        echo '
+        return '
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 ' . $iconSet . $message . '
             </div>
@@ -60,7 +60,7 @@ trait Message
             $iconSet = '<i class="fas fa-exclamation-triangle mr-2"></i>';
         }
 
-        echo '
+        return '
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 ' . $iconSet . $message . '
             </div>
@@ -80,7 +80,7 @@ trait Message
             $iconSet = '<i class="fas fa-info-circle mr-2"></i>';
         }
 
-        echo '
+        return '
             <div class="alert alert-info alert-dismissible fade show" role="alert">
                 ' . $iconSet . $message . '
             </div>
