@@ -17,10 +17,10 @@ trait Toast
                 timer: 3000,
                 timerProgressBar: true,
                 onOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    toast.addEventListener('mouseenter', Swal.stopTimer);
+                    toast.addEventListener('mouseleave', Swal.resumeTimer);
                 }
-            })
+            });
         ";
     }
 
@@ -36,7 +36,7 @@ trait Toast
                 Toast.fire({
                     icon: '" . $type . "',
                     title: '" . $message . "'
-                })
+                });
             </script>
         ";
     }
